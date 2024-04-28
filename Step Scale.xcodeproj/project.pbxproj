@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B7042EC2BDEFE6400401D19 /* HealthKitPermissionPrimingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7042EB2BDEFE6400401D19 /* HealthKitPermissionPrimingView.swift */; };
 		1BD8AF862BDD25610031F77A /* Step_ScaleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD8AF852BDD25610031F77A /* Step_ScaleApp.swift */; };
 		1BD8AF882BDD25610031F77A /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD8AF872BDD25610031F77A /* DashboardView.swift */; };
 		1BD8AF8A2BDD25630031F77A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BD8AF892BDD25630031F77A /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B7042EB2BDEFE6400401D19 /* HealthKitPermissionPrimingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitPermissionPrimingView.swift; sourceTree = "<group>"; };
 		1BD8AF822BDD25610031F77A /* Step Scale.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Step Scale.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BD8AF852BDD25610031F77A /* Step_ScaleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step_ScaleApp.swift; sourceTree = "<group>"; };
 		1BD8AF872BDD25610031F77A /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
@@ -55,6 +57,7 @@
 			children = (
 				1BD8AF852BDD25610031F77A /* Step_ScaleApp.swift */,
 				1BD8AF872BDD25610031F77A /* DashboardView.swift */,
+				1B7042EB2BDEFE6400401D19 /* HealthKitPermissionPrimingView.swift */,
 				1BD8AF932BDD93270031F77A /* HealthDataListView.swift */,
 				1BD8AF892BDD25630031F77A /* Assets.xcassets */,
 				1BD8AF8B2BDD25630031F77A /* Preview Content */,
@@ -143,6 +146,7 @@
 				1BD8AF942BDD93270031F77A /* HealthDataListView.swift in Sources */,
 				1BD8AF882BDD25610031F77A /* DashboardView.swift in Sources */,
 				1BD8AF862BDD25610031F77A /* Step_ScaleApp.swift in Sources */,
+				1B7042EC2BDEFE6400401D19 /* HealthKitPermissionPrimingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
