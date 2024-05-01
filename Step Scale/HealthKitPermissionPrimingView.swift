@@ -17,6 +17,7 @@ struct HealthKitPermissionPrimingView: View {
     You can also add new step or weight data to Apple Health from this app. Your data is private and secure
     """
   @State private var isShowingHealthKitPermissions = false
+  @Binding var hasSeen: Bool
   
     var body: some View {
       VStack(spacing: 130) {
@@ -41,6 +42,10 @@ struct HealthKitPermissionPrimingView: View {
         .tint(.pink)
       }
       .padding(30)
+      .interactiveDismissDisabled()
+      .onAppear(perform: {
+        hasSeen.toggle()
+      })
       .healthDataAccessRequest(
         store: hkManager.store,
         shareTypes: hkManager.types,
@@ -58,6 +63,6 @@ struct HealthKitPermissionPrimingView: View {
 }
 
 #Preview {
-    HealthKitPermissionPrimingView()
+  HealthKitPermissionPrimingView(hasSeen: Binding.constant(true))
     .environment(HealthKitManager())
 }
