@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct Step_ScaleApp: App {
+  let hkManager = HealthKitManager()
+  
     var body: some Scene {
         WindowGroup {
             DashboardView()
+            .environment(hkManager)
         }
     }
 }

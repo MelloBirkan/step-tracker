@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B7042EC2BDEFE6400401D19 /* HealthKitPermissionPrimingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7042EB2BDEFE6400401D19 /* HealthKitPermissionPrimingView.swift */; };
+		1B7042EF2BE03AF700401D19 /* HealthKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7042EE2BE03AF700401D19 /* HealthKitManager.swift */; };
 		1BD8AF862BDD25610031F77A /* Step_ScaleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD8AF852BDD25610031F77A /* Step_ScaleApp.swift */; };
 		1BD8AF882BDD25610031F77A /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD8AF872BDD25610031F77A /* DashboardView.swift */; };
 		1BD8AF8A2BDD25630031F77A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BD8AF892BDD25630031F77A /* Assets.xcassets */; };
@@ -15,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B7042EB2BDEFE6400401D19 /* HealthKitPermissionPrimingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitPermissionPrimingView.swift; sourceTree = "<group>"; };
+		1B7042ED2BE0396D00401D19 /* Step Scale.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Step Scale.entitlements"; sourceTree = "<group>"; };
+		1B7042EE2BE03AF700401D19 /* HealthKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitManager.swift; sourceTree = "<group>"; };
 		1BD8AF822BDD25610031F77A /* Step Scale.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Step Scale.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BD8AF852BDD25610031F77A /* Step_ScaleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step_ScaleApp.swift; sourceTree = "<group>"; };
 		1BD8AF872BDD25610031F77A /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
@@ -53,8 +58,11 @@
 		1BD8AF842BDD25610031F77A /* Step Scale */ = {
 			isa = PBXGroup;
 			children = (
+				1B7042ED2BE0396D00401D19 /* Step Scale.entitlements */,
 				1BD8AF852BDD25610031F77A /* Step_ScaleApp.swift */,
 				1BD8AF872BDD25610031F77A /* DashboardView.swift */,
+				1B7042EB2BDEFE6400401D19 /* HealthKitPermissionPrimingView.swift */,
+				1B7042EE2BE03AF700401D19 /* HealthKitManager.swift */,
 				1BD8AF932BDD93270031F77A /* HealthDataListView.swift */,
 				1BD8AF892BDD25630031F77A /* Assets.xcassets */,
 				1BD8AF8B2BDD25630031F77A /* Preview Content */,
@@ -143,6 +151,8 @@
 				1BD8AF942BDD93270031F77A /* HealthDataListView.swift in Sources */,
 				1BD8AF882BDD25610031F77A /* DashboardView.swift in Sources */,
 				1BD8AF862BDD25610031F77A /* Step_ScaleApp.swift in Sources */,
+				1B7042EF2BE03AF700401D19 /* HealthKitManager.swift in Sources */,
+				1B7042EC2BDEFE6400401D19 /* HealthKitPermissionPrimingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,12 +283,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Step Scale/Step Scale.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Step Scale/Preview Content\"";
 				DEVELOPMENT_TEAM = PGPC7U357H;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "The app shows your step and weigth data in an interactive chart";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "The app allows you to add step and weight data to Apple Health";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -302,12 +315,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Step Scale/Step Scale.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Step Scale/Preview Content\"";
 				DEVELOPMENT_TEAM = PGPC7U357H;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "The app shows your step and weigth data in an interactive chart";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "The app allows you to add step and weight data to Apple Health";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
